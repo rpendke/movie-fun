@@ -24,7 +24,7 @@ public class MovieFixtures {
             .addColumn("year", NUMBER)
             .build();
 
-        objectReader = new CsvMapper().readerFor(Movie.class).with(schema);
+            objectReader = new CsvMapper().readerFor(Movie.class).with(schema);
     }
 
     public List<Movie> load() {
