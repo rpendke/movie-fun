@@ -18,7 +18,7 @@ public class SmokeTest {
 
         String setupPage = restTemplate.getForObject(url("/setup"), String.class);
 
-        assertThat(setupPage, containsString("Wedding Crashers"));
+        assertThat(setupPage, containsString("hush"));
         assertThat(setupPage, containsString("Starsky & Hutch"));
         assertThat(setupPage, containsString("Shanghai Knights"));
         assertThat(setupPage, containsString("I-Spy"));
@@ -26,8 +26,8 @@ public class SmokeTest {
 
         String movieFunPage = restTemplate.getForObject(url("/moviefun"), String.class);
 
-        assertThat(movieFunPage, containsString("Wedding Crashers"));
-        assertThat(movieFunPage, containsString("David Dobkin"));
+        assertThat(movieFunPage, containsString("hush"));
+        assertThat(movieFunPage, containsString("ron"));
     }
 
     private String url(String path) {
